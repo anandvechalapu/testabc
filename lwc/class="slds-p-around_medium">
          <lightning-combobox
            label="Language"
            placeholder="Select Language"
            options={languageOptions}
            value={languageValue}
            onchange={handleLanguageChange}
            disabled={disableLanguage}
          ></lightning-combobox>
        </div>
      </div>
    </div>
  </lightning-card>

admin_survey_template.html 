@@ -1,0 +1,114 @@
+<template>
+  <lightning-card title="Admin Survey">
+    <div class="slds-grid slds-gutters">
+      <div class="slds-col slds-size_1-of-2">
+        <div class="slds-p-around_medium">
+          <lightning-combobox
+            label="Domain"
+            placeholder="Select Domain"
+            options={domainOptions}
+            value={domainValue}
+            onchange={handleDomainChange}
+          ></lightning-combobox>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-input
+            label="Title"
+            value={titleValue}
+            onchange={handleTitleChange}
+          ></lightning-input>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-input
+            label="Description"
+            value={descriptionValue}
+            onchange={handleDescriptionChange}
+          ></lightning-input>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-input
+            type="number"
+            label="Delay Time (in seconds)"
+            value={delayTimeValue}
+            onchange={handleDelayTimeChange}
+          ></lightning-input>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-combobox
+            label="Status"
+            placeholder="Select Status"
+            options={statusOptions}
+            value={statusValue}
+            onchange={handleStatusChange}
+          ></lightning-combobox>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-combobox
+            label="Survey State"
+            placeholder="Select State"
+            options={stateOptions}
+            value={stateValue}
+            onchange={handleStateChange}
+          ></lightning-combobox>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-combobox
+            label="Page Name/Location"
+            placeholder="Select Page"
+            options={pageOptions}
+            value={pageValue}
+            onchange={handlePageChange}
+          ></lightning-combobox>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-datepicker
+            label="Start Date"
+            value={startDateValue}
+            onchange={handleStartDateChange}
+          ></lightning-datepicker>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-datepicker
+            label="End Date"
+            value={endDateValue}
+            onchange={handleEndDateChange}
+          ></lightning-datepicker>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-combobox
+            label="Target Users"
+            placeholder="Select Target Users"
+            options={targetOptions}
+            value={targetValue}
+            onchange={handleTargetChange}
+          ></lightning-combobox>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-combobox
+            label="Specialty"
+            placeholder="Select Specialty"
+            options={specialtyOptions}
+            value={specialtyValue}
+            onchange={handleSpecialtyChange}
+          ></lightning-combobox>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-combobox
+            label="Preferences"
+            placeholder="Select Preferences"
+            options={preferenceOptions}
+            value={preferenceValue}
+            onchange={handlePreferenceChange}
+          ></lightning-combobox>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-combobox
+            label="Country"
+            placeholder="Select Country"
+            options={countryOptions}
+            value={countryValue}
+            onchange={handleCountryChange}
+            disabled={disableCountry}
+          ></lightning-combobox>
+        </div>
+        <div
