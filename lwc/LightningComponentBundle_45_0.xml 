@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage">
+            <property name="adminId" type="String" default=""/>
+            <property name="domain" type="String" default=""/>
+            <property name="title" type="String" default=""/>
+            <property name="description" type="String" default=""/>
+            <property name="delayTime" type="Integer" default="0"/>
+            <property name="status" type="String" default=""/>
+            <property name="surveyState" type="String" default=""/>
+            <property name="pageName" type="String" default=""/>
+            <property name="startDate" type="String" default=""/>
+            <property name="endDate" type="String" default=""/>
+            <property name="targetUsers" type="String" default=""/>
+            <property name="criteria" type="String" default=""/>
+            <property name="specialty" type="String" default=""/>
+            <property name="preferences" type="String" default=""/>
+            <property name="country" type="String" default=""/>
+            <property name="region" type="String" default=""/>
+            <property name="city" type="String" default=""/>
+            <property name="questions" type="Object" default=""/>
+            <property name="questionTitle" type="String" default=""/>
+            <property name="answerType" type="String" default=""/>
+            <property name="ratingRange" type="String" default=""/>
+            <property name="userDetails" type="Object" default=""/>
+            <property name="name" type="String" default=""/>
+            <property name="email" type="String" default=""/>
+            <property name="phone" type="String" default=""/>
+            <property name="speciality" type="String" default=""/>
+            <property name="ipAddress" type="String" default=""/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
